@@ -10,51 +10,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
+
 ul {
   list-style: none;
-}
-
-/* Основной блок навигации */
-.nav-main {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-
-.nav-main:hover,
-.nav-main:focus {
-  color: var(--accent-color);
-}
-.nav-main.selected {
-  color: var(--accent-color);
-}
-
-/* Блок навигации по адрессу (в шапке и в футере)*/
-address {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.nav-adress {
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-
-.nav-adress:hover,
-.nav-adress:focus {
-  color: var(--accent-color);
-}
-
-/* Футер */
-footer h2 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -63,6 +23,20 @@ h1 {
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.sec-hero,
+.sec-ourside,
+.sec-ourwork,
+.sec-ourteam,
+.sec-ourclients,
+.sec-ourportfolio,
+header,
+footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .sec-ourside h2,
@@ -75,6 +49,241 @@ h1 {
   text-align: center;
 }
 
+/* Основной блок навигации */
+.nav-mainitem {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.nav-mainitem:hover,
+.nav-mainitem:focus {
+  color: var(--accent-color);
+}
+.nav-mainitem.selected {
+  color: var(--accent-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.nav-maincontainer {
+  display: flex;
+  margin-left: 85px;
+}
+.nav-maincontainer li:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Блок навигации по адрессу (в шапке и в футере)*/
+address {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.nav-adressitem {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.nav-adressitem:hover,
+.nav-adressitem:focus {
+  color: var(--accent-color);
+}
+
+.nav-adresscontainer {
+  display: flex;
+  align-items: center;
+}
+
+.nav-adresscontainer li:not(:last-child) {
+  margin-right: 30px;
+}
+
+nav address {
+  margin-left: auto;
+}
+
+/* Футер */
+footer h2 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+
+  margin-top: 94px;
+  padding-top: 60px;
+}
+footer address {
+  margin-top: 20px;
+}
+.cont_connect {
+  margin-left: 70px;
+}
+
+.cont_connect ul {
+  display: flex;
+}
+
+/* Стилизация кнопок */
+.main-button,
+.button-filter {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.main-button {
+  font-weight: bold;
+}
+
+/* Серция Героя */
+.headerimg {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.sec-hero {
+  text-align: center;
+}
+
+/* Секция "Наши сильные стороны*/
+.sec-ourside {
+  margin-top: 94px;
+}
+
+.sec-ourside > h2 {
+  display: none;
+}
+
+.sec-ourside h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-top: 55px;
+}
+
+.sec-ourside p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  margin-top: 10px;
+}
+
+.sec-oursidelist {
+  display: flex;
+}
+.sec-oursidelist > li {
+  width: 270px;
+}
+.sec-oursidelist > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Секция "Чем  мы занимаемся*/
+
+.sec-ourwork {
+  margin-top: 94px;
+}
+
+.sec-ourworklist h3 {
+  display: none;
+}
+
+.sec-ourworklist {
+  display: flex;
+
+  margin-top: 50px;
+}
+
+.sec-ourworklist > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Секция "Наша команда*/
+
+.sec-ourteam {
+  background-color: var(--secondary-bg-color);
+  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.sec-ourteam h2 {
+  margin: 0;
+}
+
+.sec-ourteamlist {
+  display: flex;
+
+  margin-top: 50px;
+}
+
+.sec-ourteamlist li {
+  text-align: center;
+}
+
+.sec-ourteamlist > li:not(:last-child) {
+  margin-right: 30px;
+}
+.sec-ourteam h3 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.sec-ourteam p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.sec-ourteamlist ul {
+  display: flex;
+
+  margin-top: 16px;
+}
+
+/* Секция "Постоянные клиенты*/
+.sec-ourclients {
+  margin-top: 94px;
+}
+.sec-ourclientslist {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+/* Кнопки на странице портфолио */
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 93px;
+}
+.button-list > li:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Секция "Портфолио наших работ*/
+
+.portfolio-title {
+  display: none;
+}
+
+.sec-ourportfolio {
+  margin-top: 50px;
+}
+
 .sec-ourportfolio h2 {
   font-weight: bold;
   font-size: 18px;
@@ -84,35 +293,7 @@ h1 {
   font-size: 16px;
   line-height: 30px;
 }
-
-.main-button,
-.button-filter {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 30px;
-}
-
-.main-button {
-  font-weight: bold;
-}
-
-.sec-hero {
-  text-align: center;
-}
-.sec-ourteam {
-  background-color: var(--secondary-bg-color);
-}
-
-.sec-ourside h3 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.sec-ourside p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+.sec-ourportfoliolist {
+  display: flex;
+  flex-wrap: wrap;
 }

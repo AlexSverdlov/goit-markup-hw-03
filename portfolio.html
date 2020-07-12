@@ -4,29 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href=""><img src="./images/WebStudio.svg" alt="WebStudio" /></a>
-        <ul>
-          <li><a class="nav-main" href="./index.html">Студия</a></li>
+        <ul class="nav-maincontainer">
           <li>
-            <a href="./portfolio.html" class="nav-main selected">Портфолио</a>
+            <a class="nav-mainitem" href="./index.html">Студия</a>
           </li>
-          <li><a class="nav-main" href="">Контакты</a></li>
+          <li>
+            <a class="nav-mainitem selected" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li><a class="nav-mainitem" href="">Контакты</a></li>
         </ul>
         <address>
-          <ul>
+          <ul class="nav-adresscontainer">
             <li>
-              <a href="" class="nav-adress"
+              <a href="" class="nav-adressitem"
                 ><img src="./images/envelope.svg" alt="@" />
                 info@devstudio.com
               </a>
             </li>
             <li>
-              <a href="" class="nav-adress"
+              <a href="" class="nav-adressitem"
                 ><img src="./images/smartphone.svg" alt="T" />
                 +38 096 111 11 11
               </a>
@@ -36,18 +44,18 @@
       </nav>
     </header>
     <main>
-      <h1>
+      <h1 class="portfolio-title">
         Портфолио наших работ
       </h1>
-      <ul>
+      <ul class="button-list">
         <li><button type="button" class="button-filter">Все</button></li>
         <li><button type="button" class="button-filter">Веб-сайты</button></li>
         <li><button type="button" class="button-filter">Приложения</button></li>
         <li><button type="button" class="button-filter">Дизайн</button></li>
         <li><button type="button" class="button-filter">Маркетинг</button></li>
       </ul>
-      <section>
-        <ul>
+      <section class="sec-ourportfolio">
+        <ul class="sec-ourportfoliolist">
           <li>
             <a href=""><img src="./images/img11.jpg" width="370" alt="" /></a>
             <h2>Технокряк</h2>
@@ -100,12 +108,12 @@
       <div>
         <a href=""><img src="./images/WebStudio.svg" alt="WebStudio" /></a>
         <address>
-          г. Киев, пр-т Леси Украинки, 26 <br />
-          <a href="" class="nav-adress"> info@devstudio.com </a><br />
-          <a href="" class="nav-adress"> +38 096 111 11 11 </a>
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <p><a href="" class="nav-adressitem"> info@devstudio.com </a></p>
+          <p><a href="" class="nav-adressitem"> +38 096 111 11 11 </a></p>
         </address>
       </div>
-      <div>
+      <div class="cont_connect">
         <h2>Присоединяйтесь</h2>
         <ul>
           <li>
