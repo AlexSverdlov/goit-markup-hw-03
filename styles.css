@@ -1,0 +1,118 @@
+/* Установки для всего документа */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #f5f4fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+
+/* Основной блок навигации */
+.nav-main {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.nav-main:hover,
+.nav-main:focus {
+  color: var(--accent-color);
+}
+.nav-main.selected {
+  color: var(--accent-color);
+}
+
+/* Блок навигации по адрессу (в шапке и в футере)*/
+address {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.nav-adress {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.nav-adress:hover,
+.nav-adress:focus {
+  color: var(--accent-color);
+}
+
+/* Футер */
+footer h2 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sec-ourside h2,
+.sec-ourwork h2,
+.sec-ourteam h2,
+.sec-ourclients h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.sec-ourportfolio h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+}
+.sec-ourportfolio p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.main-button,
+.button-filter {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.main-button {
+  font-weight: bold;
+}
+
+.sec-hero {
+  text-align: center;
+}
+.sec-ourteam {
+  background-color: var(--secondary-bg-color);
+}
+
+.sec-ourside h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.sec-ourside p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
