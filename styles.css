@@ -299,14 +299,20 @@ footer address {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
+  margin-left: 24px;
 }
 .sec-ourportfolio p {
   font-size: 16px;
   line-height: 30px;
+  margin-left: 24px;
 }
 .sec-ourportfoliolist {
   display: flex;
   flex-wrap: wrap;
+}
+
+.sec-ourportfoliolist > li {
+  border: 1px solid #eeeeee;
 }
 
 .sec-ourportfoliolist > li:not(:nth-child(3n)) {
