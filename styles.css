@@ -11,6 +11,10 @@ body {
   font-style: normal;
 }
 
+header {
+  margin-top: 25px;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -25,14 +29,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.sec-hero,
-.sec-ourside,
-.sec-ourwork,
-.sec-ourteam,
-.sec-ourclients,
-.sec-ourportfolio,
-header,
-footer {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -69,7 +66,6 @@ footer {
 nav {
   display: flex;
   align-items: center;
-  margin-top: 25px;
 }
 
 .nav-maincontainer {
@@ -112,6 +108,15 @@ nav address {
 }
 
 /* Футер */
+footer {
+  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+  color: var(--secondary-bg-color);
+}
+
 footer h2 {
   font-weight: bold;
   font-size: 14px;
@@ -119,15 +124,27 @@ footer h2 {
   text-transform: uppercase;
 }
 
-footer {
+.foot-container {
   display: flex;
-
-  margin-top: 94px;
-  padding-top: 60px;
 }
 footer address {
   margin-top: 20px;
 }
+
+footer p {
+  margin-bottom: 0;
+}
+
+.nav-adressitem-foot {
+  color: var(--secondary-bg-color);
+  text-decoration: none;
+}
+
+.nav-adressitem-foot:hover,
+.nav-adressitem-foot:focus {
+  color: var(--accent-color);
+}
+
 .cont_connect {
   margin-left: 70px;
 }
@@ -180,6 +197,7 @@ footer address {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  color: var(--secondary-text-color);
 
   margin-top: 10px;
 }
@@ -234,6 +252,8 @@ footer address {
 
 .sec-ourteamlist li {
   text-align: center;
+  background-color: var(--primary-bg-color);
+  margin-bottom: 24px;
 }
 
 .sec-ourteamlist > li:not(:last-child) {
@@ -246,6 +266,7 @@ footer address {
 .sec-ourteam p {
   margin-top: 10px;
   margin-bottom: 0;
+  color: var(--secondary-text-color);
 }
 .sec-ourteamlist ul {
   display: flex;
